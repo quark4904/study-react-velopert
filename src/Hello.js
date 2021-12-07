@@ -9,10 +9,12 @@ import React from "react";
 //   );
 // }
 
-function Hello({ name, color }) {
+function Hello({ name, color, isSpecial }) {
   return (
     <>
-      <h1 style={{ color }}>Hello, {name}</h1>
+      <h1 style={{ color }}>
+        {isSpecial && <b>*</b>}Hello, {name}
+      </h1>
     </>
   );
 }
