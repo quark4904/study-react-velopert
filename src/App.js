@@ -1,8 +1,4 @@
 import React, { useRef, useState } from "react";
-import Hello from "./Hello";
-import Wrapper from "./Wrapper";
-import Counter from "./Counter";
-import InputSample from "./InputSample";
 import UserList from "./UserList";
 import CreateUser from "./CreateUser";
 
@@ -21,24 +17,8 @@ function App() {
     });
   };
 
-  const [users, setUsers] = useState([
-    // {
-    //   id: 1,
-    //   username: "velopert",
-    //   email: "public.velopert@gmail.com",
-    // },
-    // {
-    //   id: 2,
-    //   username: "tester",
-    //   email: "tester@example.com",
-    // },
-    // {
-    //   id: 3,
-    //   username: "liz",
-    //   email: "liz@example.com",
-    // },
-  ]);
-
+  const [users, setUsers] = useState([]);
+  console.log(users);
   const nextId = useRef(1);
   const onCreate = () => {
     const user = {
